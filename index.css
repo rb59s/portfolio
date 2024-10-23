@@ -1,5 +1,5 @@
 body{
-    background-image: url(./img/mylivewallpapers-com-Space-3440x1440.gif);
+    background-image: url(./logo/img_remove/mylivewallpapers-com-Space-3440x1440.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -82,4 +82,36 @@ html, body {
         font-weight: weight;
         font-style: normal;
 
+    }
+
+    .diamond {
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        /* transition: transform 0.3s ease; */
+        transition: transform 0.3s ease; 
+    }
+    
+    .container{
+    
+        
+        display: grid;
+        grid-template-columns: repeat(5, minmax(150px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin: 150px auto 0; 
+        width: fit-content;
+        /* transform: translate(0, 100px); */
+        /* translate: 0 100px; */
+       
+        
+    
+    }
+    
+    .diamond:hover{
+    
+        transform: scale(1.1);
+    
     }
