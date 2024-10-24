@@ -1,16 +1,17 @@
-body{
-    background-image: url(./logo/img_remove/mylivewallpapers-com-Space-3440x1440.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 html, body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
     /* width: 100vw; */
 }
+body{
+    background-image: url(./logo/img_remove/mylivewallpapers-com-Space-3440x1440.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 175px;
+}
+
 
     header{
 
@@ -28,34 +29,51 @@ html, body {
             justify-content: space-around; 
              align-items: center;   */
              padding-top: 50px;
-            
-
+             /* background: fixed;
+             */
+             /* background-attachment:fixed ; */
+             position: fixed;
+             width: 100%;
+        top: 0;
     }
 
     .nf{
         font-size: 100px;
         color: white;
         /* transform: translate(50px, 100px); */
-        padding-left: 50px;
-        font-family: "DM Sans", sans-serif;
+        padding-left: 420px;
+        /* font-family: "DM Sans", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
-        font-style: normal;
+        font-style: normal; */
+        
         color: #182DDB;
         margin: 0;
+        transform: translate(0, 70px);
+    }
+    .work-sans-nf
+    {
+        font-family: 'Work Sans', sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 800;
+        font-style: normal;
     }
 
     .p{
         font-size: 100px;
         color: white;
         /* transform: translate(50px, -140px); */
-        padding-left: 50px;
-        font-family: "DM Sans", sans-serif;
+        padding-left: 490px;
+        /* font-family: "DM Sans", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
-        font-style: normal;
+        font-style: normal; */
+        /* font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        font-style: normal; */
         color: #182DDB;
         margin: 0;
+        transform: translate(0, 30px);
         
     }
 
@@ -92,6 +110,8 @@ html, body {
         border-radius: 10px;
         /* transition: transform 0.3s ease; */
         transition: transform 0.3s ease; 
+        padding: 0%;
+        margin: 0%;
     }
     
     .container{
@@ -99,12 +119,13 @@ html, body {
         
         display: grid;
         grid-template-columns: repeat(5, minmax(150px, 1fr));
-        gap: 20px;
+        gap: 70px;
         padding: 20px;
         margin: 150px auto 0; 
         width: fit-content;
         /* transform: translate(0, 100px); */
         /* translate: 0 100px; */
+        margin-bottom: 100px;
        
         
     
@@ -115,3 +136,58 @@ html, body {
         transform: scale(1.1);
     
     }
+
+
+    footer{
+        height: 200px;
+        
+        background: linear-gradient(to top, rgba(19, 161, 219, 0.9), rgba(19, 161, 219, 0.5), rgba(19, 161, 219, 0));
+        opacity: 0.9;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(150px, 1fr));
+        gap: 150px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+
+    .diamond1 {
+        width: 65px;
+        height: 65px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        /* transition: transform 0.3s ease; */
+        transition: transform 0.3s ease; 
+        margin-top: 40px;
+        transform: translate(0, 20px);
+    }
+
+
+    .diamond1:hover{
+    
+        transform: scale(1.1);
+    
+    }
+
+    .diamond2 {
+        width: 80px;
+        height: 80px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        /* transition: transform 0.3s ease; */
+        transition: transform 0.3s ease; 
+        margin-top: 40px;
+        transform: translate(0, 20px);
+    
+    }
+
+
+    .diamond2:hover{
+    
+        transform: scale(1.1);
+    
+    }
+
+    
