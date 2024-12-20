@@ -63,7 +63,9 @@ const c = document.querySelector('.change');
 const changeButtonstar = document.querySelector('.star');
 const bf = document.querySelectorAll('.diamond1');
 const bf1 = document.querySelector('.diamond2');
-const video = document.querySelector('.video1')
+const video = document.querySelector('.video1');
+const d1 = document.getElementById('d1');
+
 
 
 function changeBackgroundAndHeadersunset() {
@@ -85,6 +87,7 @@ function changeBackgroundAndHeadersunset() {
     bf2.style.filter = "invert()";
   }
   bf1.style.filter = "invert()";
+  d1.style.filter = "invert()"
 
 
   // c.style.backgroundColor = filter: invert(); 
@@ -107,6 +110,8 @@ function changeBackgroundAndHeaderstar() {
     bf2.style.filter = "";
   }
   bf1.style.filter = "";
+  d1.style.filter = "";
+  video.src = "./logo/img_remove/mylivewallpapers-com-Space-3440x1440 (1).mp4";
 
   // c.style.backgroundColor = filter: invert(); 
 }
