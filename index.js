@@ -63,15 +63,15 @@ const p = document.querySelector('.p');
 
 function changeBackgroundAndHeader() {
 
-  body.style.backgroundImage = "url('./mylivewallpapers-com-Long-Night-Drive-4K-_1_.gif')";
+  body.style.backgroundImage = "url('./imgbg/fond-gif.gif')";
 
   
-  header.style.backgroundImage = "linear-gradient(to bottom, rgba(128, 0, 128, 1), rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0))";
+  header.style.backgroundImage = "linear-gradient(to bottom, rgb(150, 6, 150), rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0))";
   header.style.color = "#fff"; 
   
   footer.style.backgroundImage = "linear-gradient(to top, rgba(128, 0, 128, 1), rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0))";
-  nf.style.color = "#c300ba";
-  p.style.color = "#c300ba";
+  nf.style.color = "#C30F09";
+  p.style.color = "#C30F09";
   textElement.style.color = "#cda9cb";
 }
 

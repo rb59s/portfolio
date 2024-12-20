@@ -162,7 +162,7 @@ body{
     footer{
         height: 200px;
         background: linear-gradient(to top, rgba(19, 161, 219, 0.9), rgba(19, 161, 219, 0.5), rgba(19, 161, 219, 0));
-        opacity: 0.9;
+        opacity: 0.7;
         /* display: grid;
         grid-template-columns: repeat(5, minmax(175px, 1fr));  */
         gap: 170px;  
@@ -329,4 +329,3 @@ body{
   .star:hover{
     transform: scale(1.2);
   }
-  
