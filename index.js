@@ -59,24 +59,60 @@ const changeButtonsunset = document.getElementsByClassName('sunset')[0];
 const footer = document.querySelector('footer');
 const nf = document.querySelector('.nf');
 const p = document.querySelector('.p');
+const c = document.querySelector('.change');
+const changeButtonstar = document.querySelector('.star');
+const bf = document.querySelectorAll('.diamond1');
+const bf1 = document.querySelector('.diamond2');
+const video = document.querySelector('.video1')
 
 
-function changeBackgroundAndHeader() {
+function changeBackgroundAndHeadersunset() {
 
-  body.style.backgroundImage = "url('./imgbg/fond-gif.gif')";
+  // body.style.backgroundImage = "url('./imgbg/fond-gif.gif')";
+  video.src = "./imgbg/fond-gif.mp4";
 
   
   header.style.backgroundImage = "linear-gradient(to bottom, rgb(150, 6, 150), rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0))";
   header.style.color = "#fff"; 
   
-  footer.style.backgroundImage = "linear-gradient(to top, rgba(128, 0, 128, 1), rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0))";
+  footer.style.backgroundImage = "linear-gradient(to top, rgb(75, 2, 75), rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0))";
   nf.style.color = "#C30F09";
   p.style.color = "#C30F09";
   textElement.style.color = "#cda9cb";
+  c.style.filter = "invert()";
+  for (const bf2 of bf) {
+    
+    bf2.style.filter = "invert()";
+  }
+  bf1.style.filter = "invert()";
+
+
+  // c.style.backgroundColor = filter: invert(); 
+}
+function changeBackgroundAndHeaderstar() {
+
+  body.style.backgroundImage = "";
+
+  
+  header.style.backgroundImage = "";
+  header.style.color = ""; 
+  
+  footer.style.backgroundImage = "";
+  nf.style.color = "";
+  p.style.color = "";
+  textElement.style.color = "";
+  c.style.filter = "";
+  for (const bf2 of bf) {
+    
+    bf2.style.filter = "";
+  }
+  bf1.style.filter = "";
+
+  // c.style.backgroundColor = filter: invert(); 
 }
 
-changeButtonsunset.addEventListener('click', changeBackgroundAndHeader);
-
+changeButtonsunset.addEventListener('click', changeBackgroundAndHeadersunset);
+changeButtonstar.addEventListener('click', changeBackgroundAndHeaderstar)
 
 
 
