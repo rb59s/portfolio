@@ -4,53 +4,69 @@ html, body {
     padding: 0;
     /* width: 100vw; */
 }
+
+
 body{
+    background-attachment: fixed;
     background-image: url(./logo/img_remove/mylivewallpapers-com-Space-3440x1440.gif);
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 175px;
+    justify-content: center;
+    align-items: center;
 }
 
 
     header{
-
-        
-            /* background-color: #182DDB;  */
-            background: linear-gradient(to bottom, rgba(19, 161, 219, 0.9), rgba(19, 161, 219, 0.5), rgba(19, 161, 219, 0));
-            opacity: 0.7;
-            color: white; 
-            padding: 20px;
-            text-align: center;
-            height: 175px;
-            /* padding: 0%;
-            margin: 0%; */
-            /* display: flex; 
-            justify-content: space-around; 
-             align-items: center;   */
-             padding-top: 50px;
-             /* background: fixed;
-             */
-             /* background-attachment:fixed ; */
-             position: fixed;
-             width: 100%;
+        /* background-color: #182DDB;  */
+        background: linear-gradient(to bottom, rgba(19, 161, 219, 0.9), rgba(19, 161, 219, 0.5), rgba(19, 161, 219, 0));
+        opacity: 0.7;
+        color: white; 
+        padding-bottom: 20px;
+        /* text-align: center; */
+        height: 100px;
+        /* padding: 0%;
+        margin: 0%; */
+        /* display: flex; 
+        justify-content: space-around; 
+        align-items: center;   */
+        padding-top: 50px;
+        /* background: fixed;
+        */
+        /* background-attachment:fixed ; */
+        position: fixed;
+        /* width: 100%; */
         top: 0;
+        z-index: 2;
+        transition: transform 0.5s;
+        transform: translateY(-100%);
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        width: 100vw;  
     }
 
+
+    header.show {
+        transform: translateY(0); /* Affiche le header */
+    }
+
+
     .nf{
-        font-size: 100px;
-        color: white;
+        font-size: clamp(20px, 15vw, 100px);
+        /* color: white; */
         /* transform: translate(50px, 100px); */
-        padding-left: 420px;
+        text-align: center;
         /* font-family: "DM Sans", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
         font-style: normal; */
-        
         color: #182DDB;
         margin: 0;
         transform: translate(0, 70px);
+        margin-top: 0px;
     }
+
+
     .work-sans-nf
     {
         font-family: 'Work Sans', sans-serif;
@@ -59,11 +75,12 @@ body{
         font-style: normal;
     }
 
+
     .p{
         font-size: 100px;
-        color: white;
+        /* color: white; */
         /* transform: translate(50px, -140px); */
-        padding-left: 490px;
+        text-align: center;
         /* font-family: "DM Sans", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
@@ -74,19 +91,24 @@ body{
         color: #182DDB;
         margin: 0;
         transform: translate(0, 30px);
-        
+        margin-bottom: 30px;
+        font-size: clamp(20px, 12vw, 100px);
+
     }
+
 
     ul {
         list-style-type: none; 
         padding: 0; 
         margin: 0; 
-        display: flex; 
+        display: flex;
+        flex-wrap: wrap; 
         justify-content: space-evenly; 
         align-items: center; 
         /* gap: 500px; */
         transform: translate(0, -15px);
     }
+
 
     li {
         padding: 8px; 
@@ -99,8 +121,8 @@ body{
         font-optical-sizing: auto;
         font-weight: weight;
         font-style: normal;
-
     }
+
 
     .diamond {
         width: 100px;
@@ -113,43 +135,46 @@ body{
         padding: 0%;
         margin: 0%;
     }
+
     
     .container{
     
         
         display: grid;
-        grid-template-columns: repeat(5, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 70px;
         padding: 20px;
         margin: 150px auto 0; 
-        width: fit-content;
+        justify-items: center;
+        /* width: fit-content; */
         /* transform: translate(0, 100px); */
         /* translate: 0 100px; */
         margin-bottom: 100px;
-       
-        
-    
+        margin-top: 200px;
     }
+
     
     .diamond:hover{
-    
         transform: scale(1.1);
-    
     }
 
 
     footer{
         height: 200px;
-        
         background: linear-gradient(to top, rgba(19, 161, 219, 0.9), rgba(19, 161, 219, 0.5), rgba(19, 161, 219, 0));
         opacity: 0.9;
-        display: grid;
-        grid-template-columns: repeat(5, minmax(150px, 1fr));
-        gap: 150px;
+        /* display: grid;
+        grid-template-columns: repeat(5, minmax(175px, 1fr));  */
+        gap: 170px;  
+        justify-content: space-between;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center; 
         align-items: center;
+        margin-top: 150px;
+        width: 100vw;
     }
+
 
     .diamond1 {
         width: 65px;
@@ -165,10 +190,9 @@ body{
 
 
     .diamond1:hover{
-    
         transform: scale(1.1);
-    
     }
+
 
     .diamond2 {
         width: 80px;
@@ -180,14 +204,129 @@ body{
         transition: transform 0.3s ease; 
         margin-top: 40px;
         transform: translate(0, 20px);
-    
     }
 
 
     .diamond2:hover{
-    
         transform: scale(1.1);
-    
     }
 
+
+    .presentation {
+        font-style: bold;
+        font-family: "Bree Serif", serif;
+        /* font-weight: 400; */
+        font-style: normal;
+        /* font-size: 1.3rem; */
+        line-height: 1.3;
+        color: #b5b2df;
+        /* max-width: 1000px; */
+        /* margin: 80px auto; */
+        text-align: center;
+        padding: 0 17vw;
+        /* transform: translate(0, -25px); */
+        margin-top: 5vh;
+        justify-content: center;
+        font-size: clamp(20px, 2vw, 100px);
+    }
     
+
+    #typed-text {
+        white-space: pre-wrap; /* Pour gérer les retours à la ligne */
+        text-align: center;
+    }
+
+
+    main{
+        transform: translate(0, -30px);
+    }
+
+
+    .item a
+    {
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+    .item a:visited{
+    color: inherit;
+    /* text-decoration: none; */
+    }
+
+
+    .change{
+        border-radius: 5%;
+        width: 35px;
+        height: 120px;
+        background-color: rgba(19, 161, 219, 0.9);
+        opacity: 0.7;
+        z-index: 1;
+        position: fixed;
+        top: 300px;
+        left: 10px;
+        /* font-size: clamp(20px, 2vw, 50px); */
+        /* transition: transform 0.3s ease; */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+
+    /* .change:hover{
+        transform: scale(1.2);
+    }
+ */
+
+ .change {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: center; 
+     
+  }
+  
+
+  
+  .change img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+  }
+
+  .night img{
+    width: 23px;
+
+  }
+
+  .sunset img {
+    width: 30px;
+
+  }
+
+  .sunset{
+    margin: 0%;
+    transition: transform 0.3s ease;
+  }
+
+  .night{
+    margin: 0%;
+    transition: transform 0.3s ease;
+  }
+
+  .star{
+    margin: 0%;
+    transition: transform 0.3s ease;
+  }
+
+  .sunset:hover{
+    transform: scale(1.2);
+  }
+
+  .night:hover{
+    transform: scale(1.2);
+  }
+
+  .star:hover{
+    transform: scale(1.2);
+  }
+  
