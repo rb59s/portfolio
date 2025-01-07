@@ -65,6 +65,9 @@ const bf = document.querySelectorAll('.diamond1');
 const bf1 = document.querySelector('.diamond2');
 const video = document.querySelector('.video1');
 const d1 = document.getElementById('d1');
+const l1 = document.querySelector('.diamond11');
+const l2 = document.querySelector('.diamond12');
+const l3 = document.querySelector('.diamond13');
 
 
 
@@ -117,8 +120,81 @@ function changeBackgroundAndHeaderstar() {
 }
 
 changeButtonsunset.addEventListener('click', changeBackgroundAndHeadersunset);
-changeButtonstar.addEventListener('click', changeBackgroundAndHeaderstar)
+changeButtonstar.addEventListener('click', changeBackgroundAndHeaderstar);
 
+
+
+
+
+
+
+const b1 = document.createElement('span');
+b1.textContent = "r.b59_ls";
+function bulle1() {
+ l1.addEventListener("mouseover", () => {
+    b1.style.visibility = "visible";
+    b1.style.opacity = "1";
+  });
+
+  l1.addEventListener("mouseout", () => {
+    b1.style.visibility = "hidden";
+    b1.style.opacity = "0";
+  });
+
+  b1.classList.add("b100");
+  l1.appendChild(b1);
+
+
+
+
+}
+
+const b2 = document.createElement('span');
+b2.textContent = "07 83 81 84 62";
+function bulle2() {
+  l2.addEventListener("mouseover", () => {
+     b2.style.visibility = "visible";
+     b2.style.opacity = "1";
+   });
+ 
+   l2.addEventListener("mouseout", () => {
+     b2.style.visibility = "hidden";
+     b2.style.opacity = "0";
+   });
+ 
+   b2.classList.add("b200");
+   l2.appendChild(b2);
+ 
+ 
+ 
+ 
+ }
+
+
+ const b3 = document.createElement('span');
+b3.textContent = "berrazzag59dbz@gmail.com";
+function bulle3() {
+  l3.addEventListener("mouseover", () => {
+     b3.style.visibility = "visible";
+     b3.style.opacity = "1";
+   });
+ 
+   l3.addEventListener("mouseout", () => {
+     b3.style.visibility = "hidden";
+     b3.style.opacity = "0";
+   });
+ 
+   b3.classList.add("b300");
+   l3.appendChild(b3);
+ 
+ 
+ 
+ 
+ }
+
+bulle1()
+bulle2()
+bulle3()
 
 
 
