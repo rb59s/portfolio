@@ -1,0 +1,187 @@
+
+.ligne1{
+    height: 75vh;
+    width: 0.3vw;
+    background-color: whitesmoke;
+    gap: 12%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
+.biggie{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    
+}
+
+.bulle{
+
+    height: 1.5vh;
+    width: 0.75vw;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    margin: 0%;
+}
+
+.pentagone-gauche {
+    width: 200px; /* Largeur de la figure */
+    height: 75px; /* Hauteur de la figure */
+    background-color: #3498db; /* Couleur du polygone */
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); /* Forme du pentagone */
+    
+    /* transform: rotate(36deg);  */
+    /* color: blue; */
+    /* width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 50px 100px 50px 0;
+      border-color: transparent #3498db transparent transparent; Pointe de la flèche */
+      position: absolute;
+      
+  }
+  /* .pentagone-gauche::before {
+    content: '';
+    position: absolute;
+    top: -50px; /* Aligne sur la pointe */
+ 
+
+.gauche{
+    gap: 30px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50px, 0);
+}  
+
+
+.pentagone-droit{
+    clip-path: polygon(100% 0%, 25% 0%, 0% 50%, 25% 100%, 100% 100%);
+    width: 250px; /* Largeur de la figure */
+    height: 75px; /* Hauteur de la figure */
+    background-color: #3498db; /* Couleur du polygone */
+    position: absolute;
+}
+
+
+.pg1{
+    position-anchor: --infobox1;
+    right: calc(anchor(left) - -20px);
+    top: calc(anchor(top) - 30px);
+}
+.pg2{
+    position-anchor: --infobox3;
+    right: calc(anchor(left) - -20px);
+    top: calc(anchor(top) - 30px);
+}
+.pg3{
+    position-anchor: --infobox5;
+    right: calc(anchor(left) - -20px);
+    top: calc(anchor(top) - 30px);
+}
+.pg4{
+    position-anchor: --infobox7;
+    right: calc(anchor(left) - -20px);
+    top: calc(anchor(top) - 30px);
+}
+.cb1{
+    anchor-name: --infobox1;
+}
+
+.cb2{
+    anchor-name: --infobox2;
+}
+.cb3{
+    anchor-name: --infobox3;
+}
+.cb4{
+    anchor-name: --infobox4;
+}
+.cb5{
+    anchor-name: --infobox5;
+}
+.cb6{
+    anchor-name: --infobox6;
+}
+.cb7{
+    anchor-name: --infobox7;
+}
+
+.pd1{
+    position-anchor: --infobox2;
+    left: calc(anchor(right) - -20px);
+    top: calc(anchor(top) - 30px);
+}
+.pd2{
+    position-anchor: --infobox4;
+    left: calc(anchor(right) - -20px);
+    top: calc(anchor(top) - 30px);
+}
+
+.pd3{
+    position-anchor: --infobox6;
+    left: calc(anchor(right) - -20px);
+    top: calc(anchor(top) - 30px);
+}
+
+
+/* .p{
+
+    animation: prenom 1500ms, prenom2 1500ms 2500ms infinite alternate;
+  }
+
+  @keyframes prenom {
+    0%{translate: -100vw;}
+    100%{translate: 0; }    
+  }
+  @keyframes prenom2 {
+    0%{translate: 0;}
+    100%{translate: 0 -8vh; }    
+  } */
+
+  .pg1{
+    animation: pg1 1500ms;
+    view-timeline: --pg1 block;
+    animation-timeline: --pg1;
+  }
+
+  @keyframes pg1 {
+    0%{translate: -100vw;}
+    75%{translate: 0; }
+    100%{translate: 0; }
+  }
+  .pg2{
+    animation: pg1 1500ms;
+    view-timeline: --pg2 block;
+    animation-timeline: --pg2;
+  }
+
+  @keyframes pg2 {
+    0%{translate: -100vw;}
+    100%{translate: 0; }
+  }
+  .pg3{
+    animation: pg1 1500ms;
+    view-timeline: --pg3 block;
+    animation-timeline: --pg3;
+  }
+
+  @keyframes pg3 {
+    0%{translate: -100vw;}
+    100%{translate: 0; }
+  }
+  .pg4{
+    animation: pg1 1500ms;
+    view-timeline: --pg4 block;
+    animation-timeline: --pg4;
+  }
+
+  @keyframes pg4 {
+    0%{translate: -100vw;}
+    40%{translate: 0; }
+  }

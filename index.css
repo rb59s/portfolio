@@ -19,6 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    overflow-x: hidden;
 }
 
 .video1{
@@ -40,7 +41,7 @@ body{
         color: white; 
         padding-bottom: 20px;
         /* text-align: center; */
-        height: 100px;
+        height: 13vh;
         /* padding: 0%;
         margin: 0%; */
         /* display: flex; 
@@ -58,6 +59,7 @@ body{
         transform: translateY(-100%);
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         width: 100vw;  
+        text-align: center;
     }
 
 
@@ -67,7 +69,7 @@ body{
 
 
     .nf{
-        font-size: clamp(20px, 15vw, 100px);
+        font-size: clamp(20px, 13vw, 130px);
         /* color: white; */
         /* transform: translate(50px, 100px); */
         text-align: center;
@@ -77,7 +79,7 @@ body{
         font-style: normal; */
         color: #182DDB;
         margin: 0;
-        transform: translate(0, 70px);
+        transform: translate(0, 20%);
         margin-top: 0px;
     }
 
@@ -92,7 +94,6 @@ body{
 
 
     .p{
-        font-size: 100px;
         /* color: white; */
         /* transform: translate(50px, -140px); */
         text-align: center;
@@ -105,9 +106,9 @@ body{
         font-style: normal; */
         color: #182DDB;
         margin: 0;
-        transform: translate(0, 30px);
-        margin-bottom: 30px;
-        font-size: clamp(20px, 12vw, 100px);
+        transform: translate(0, -5%);
+        margin-bottom: 50px;
+        font-size: clamp(20px, 13vw, 130px);
 
     }
 
@@ -131,7 +132,7 @@ body{
         /* border: 1px solid #13A1DB;  */
         border-radius: 4px; 
         margin-bottom: 5px; 
-        font-size: 20px;
+        font-size: clamp(20px, 3vh, 100px);
         font-family: "DM Sans", sans-serif;
         font-optical-sizing: auto;
         font-weight: weight;
@@ -162,8 +163,8 @@ body{
     
         
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 70px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8%;
         width: 90%;
         /* padding: 20px; */
         /* margin: 150px auto 0;  */
@@ -171,17 +172,19 @@ body{
         /* width: fit-content; */
         /* transform: translate(0, 100px); */
         /* translate: 0 100px; */
-        /* margin-bottom: 100px; */
+        margin-bottom: 15%;
         /* margin-top: 200px; */
         margin-left: 0%;
         align-items: center;
+        padding-bottom: 0%;
+
     }
     .container1{
     
         
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 70px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8%;
         width: 90%;
         /* padding: 20px; */
         /* margin: 150px auto 0;  */
@@ -189,10 +192,13 @@ body{
         /* width: fit-content; */
         /* transform: translate(0, 100px); */
         /* translate: 0 100px; */
-        margin-bottom: 100px;
-        margin-top: 200px;
-        margin-left: 0%;
+        /* margin-bottom: 100px;*/
+        /* margin-top: 50%; */
+        /* margin-left: 0%;  */
         align-items: center;
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+        translate: 0 -15vh;
     }
 
 
@@ -210,7 +216,7 @@ body{
 
     footer{
         position: relative;
-        height: 200px;
+        min-height: 200px;
         background: linear-gradient(to top, rgba(19, 161, 219, 0.9), rgba(19, 161, 219, 0.5), rgba(19, 161, 219, 0));
         opacity: 0.7;
         /* display: grid;
@@ -236,7 +242,7 @@ body{
         /* transition: transform 0.3s ease; */
         transition: transform 0.3s ease; 
         margin-top: 40px;
-        transform: translate(0, 20px);
+        /* transform: translate(0, 20px); */
     }
 
 
@@ -254,7 +260,7 @@ body{
         /* transition: transform 0.3s ease; */
         transition: transform 0.3s ease; 
         margin-top: 40px;
-        transform: translate(0, 20px);
+        /* transform: translate(0, 20px); */
     }
 
 
@@ -275,21 +281,27 @@ body{
         /* margin: 80px auto; */
         text-align: center;
         padding: 0 17vw;
-        /* transform: translate(0, -25px); */
-        margin-top: 5vh;
+        transform: translate(0, 35%);
+        margin-top: 20vh;
         justify-content: center;
         font-size: clamp(20px, 2vw, 100px);
+        transform: translate(0, -120%);
+        
+       
+        
     }
     
 
     #typed-text {
         white-space: pre-wrap; /* Pour gérer les retours à la ligne */
         text-align: center;
+        margin: 0%;
     }
 
 
     main{
         transform: translate(0, -30px);
+        overflow-x: hidden;
     }
 
 
@@ -308,8 +320,8 @@ body{
 
     .change{
         border-radius: 5%;
-        width: 35px;
-        height: 120px;
+        width: 4vw;
+        height: 24vh;
         background-color: #0B9999;
         opacity: 0.7;
         z-index: 1;
@@ -323,6 +335,8 @@ body{
         /* justify-content: center; */
     }
 
+  
+
     /* .change:hover{
         transform: scale(1.2);
     }
@@ -331,7 +345,7 @@ body{
  .change {
     display: flex;
     flex-direction: column; 
-    gap: 10px; 
+    gap: 2.5vh; 
     align-items: center; 
      
   }
@@ -345,12 +359,12 @@ body{
   }
 
   .night img{
-    width: 23px;
+    width: 2vw;
 
   }
 
   .sunset img {
-    width: 30px;
+    width: 3vw;
 
   }
 
@@ -405,8 +419,8 @@ body{
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7); 
     color: #fff; 
-     padding-left: 10%;
-     padding-top: 14%;
+     /* padding-left: 10%;
+     padding-top: 14%; */
     border-radius: 5px;
     font-size: 14px;
     visibility: hidden; 
@@ -414,6 +428,7 @@ body{
     transition: opacity 0.3s ease;
     height: 25px;
     width: 90px;
+    text-align: center;
   }
 
   .b300 {
@@ -434,10 +449,57 @@ body{
     width: 165px;
   }
 
-  .title1{
-
+  @font-face {
+    font-family: 'MaPolice1';
+    src: url('./font/Super\ Cartoon.ttf') format('truetype');
+  }
+  #skills1{
+    padding-top: 7vh;
+  }
+  .title1 {
+    font-family: 'MaPolice1', sans-serif;
+    font-size: clamp(5px, 3vw, 100px);
+    margin: 0%;
+    padding: 0%;
   }
 
   .title2{
+    font-family: 'MaPolice1', sans-serif;
+    font-size: clamp(5px, 3vw, 100px);
+    margin: 0%;
+    padding: 0%;
+    /* transform: translateY(-200%); */
+    translate: 0 -200%;
+  }
+/* 
+  .main-title2{
+    transform: translateY(-250%);
+  } */
 
+  .p{
+
+    animation: prenom 1500ms, prenom2 1500ms 2500ms infinite alternate;
+  }
+
+  @keyframes prenom {
+    0%{translate: -100vw;}
+    100%{translate: 0; }    
+  }
+  @keyframes prenom2 {
+    0%{translate: 0;}
+    100%{translate: 0 -8vh; }    
+  }
+  .nf{
+    animation: nom 1500ms, nom2 1500ms 2500ms infinite alternate;
+
+  }
+
+  @keyframes nom{
+    0%{translate: 200vw;}
+    100%{translate: 0;}
+  }
+
+  @keyframes nom2 {
+    0%{translate: 0;}
+    100%{translate: 0 -4vh;}
   }

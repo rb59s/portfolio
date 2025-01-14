@@ -55,7 +55,7 @@ const header = document.querySelector("header");
 
 
 const body = document.body;
-const changeButtonsunset = document.getElementsByClassName('sunset')[0];
+const changeButtonnight = document.getElementsByClassName('night')[0];
 const footer = document.querySelector('footer');
 const nf = document.querySelector('.nf');
 const p = document.querySelector('.p');
@@ -68,10 +68,11 @@ const d1 = document.getElementById('d1');
 const l1 = document.querySelector('.diamond11');
 const l2 = document.querySelector('.diamond12');
 const l3 = document.querySelector('.diamond13');
+const changeButtonsunset = document.querySelector('.sunset');
 
 
 
-function changeBackgroundAndHeadersunset() {
+function changeBackgroundAndHeadernight() {
 
   // body.style.backgroundImage = "url('./imgbg/fond-gif.gif')";
   video.src = "./imgbg/fond-gif.mp4";
@@ -119,8 +120,40 @@ function changeBackgroundAndHeaderstar() {
   // c.style.backgroundColor = filter: invert(); 
 }
 
-changeButtonsunset.addEventListener('click', changeBackgroundAndHeadersunset);
+
+
+function changeBackgroundAndHeadersunset() {
+
+  
+  video.src = "./imgbg/mylivewallpapers.com-Sunset-Ocean.mp4";
+
+  
+  header.style.backgroundImage = "linear-gradient(to bottom, rgb(150, 6, 150), rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0))";
+  header.style.color = "#fff"; 
+  
+  footer.style.backgroundImage = "linear-gradient(to top, rgb(75, 2, 75), rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0))";
+  nf.style.color = "#C30F09";
+  p.style.color = "#C30F09";
+  textElement.style.color = "#cda9cb";
+  c.style.filter = "";
+  for (const bf2 of bf) {
+    
+    bf2.style.filter = "";
+  }
+  bf1.style.filter = "";
+  d1.style.filter = ""
+
+
+  
+}
+
+
+
+
+
+changeButtonnight.addEventListener('click', changeBackgroundAndHeadernight);
 changeButtonstar.addEventListener('click', changeBackgroundAndHeaderstar);
+changeButtonsunset.addEventListener('click', changeBackgroundAndHeadersunset);
 
 
 
@@ -196,6 +229,7 @@ bulle1()
 bulle2()
 bulle3()
 
+  
 
 
 
