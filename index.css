@@ -196,7 +196,7 @@ body{
         /* margin-top: 50%; */
         /* margin-left: 0%;  */
         align-items: center;
-        margin-bottom: 0%;
+        margin-bottom: 10vh;
         padding-bottom: 0%;
         translate: 0 -15vh;
     }
@@ -463,14 +463,14 @@ body{
     padding: 0%;
   }
 
-  .title2{
+ .title2{
     font-family: 'MaPolice1', sans-serif;
     font-size: clamp(5px, 3vw, 100px);
     margin: 0%;
     padding: 0%;
     /* transform: translateY(-200%); */
     translate: 0 -200%;
-  }
+  } 
 /* 
   .main-title2{
     transform: translateY(-250%);
