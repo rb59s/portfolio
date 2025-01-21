@@ -1,0 +1,28 @@
+.photo{
+    height: 14vh;
+    width: 7vw;
+    border-radius: 50%;
+    background-image: url('./imgbg/IMG_0926.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    translate: 40vw;
+    position: absolute;
+    cursor: grab;
+}
+
+/* @font-face{
+    
+        font-family: 'MaPolice2';
+        src: url('./font/Saiyan-Sans\ Right\ Oblique.ttf') format('truetype');
+      
+} */
+
+.btncv{
+    margin-top: 7%;
+    height: 7.5vh;
+    width: 12vw;
+    border-radius: 3%;
+    background-color: blueviolet;
+}

@@ -69,6 +69,12 @@ const l1 = document.querySelector('.diamond11');
 const l2 = document.querySelector('.diamond12');
 const l3 = document.querySelector('.diamond13');
 const changeButtonsunset = document.querySelector('.sunset');
+const pg = document.querySelectorAll('.pentagone-gauche');
+const pd = document.querySelectorAll('.pentagone-droit');
+const pgbis = document.querySelectorAll('.pentagone-gauche-bis');
+const pdbis = document.querySelectorAll('.pentagone-droit-bis');
+const point = document.querySelectorAll('.point');
+
 
 
 
@@ -86,6 +92,22 @@ function changeBackgroundAndHeadernight() {
   p.style.color = "#C30F09";
   textElement.style.color = "#cda9cb";
   c.style.filter = "invert()";
+  for (const pg2 of pg){
+    pg2.style.backgroundColor = "#C30F09";
+  }
+  for (const pd2 of pd){
+    pd2.style.backgroundColor = "#C30F09";
+  }
+  for (const pgbis2 of pgbis){
+    pgbis2.style.backgroundColor = "#C30F09";
+  }
+  for (const pdbis2 of pdbis){
+    pdbis2.style.backgroundColor = "#C30F09";
+  }
+  for (const point2 of point){
+    point2.style.backgroundColor = "#C30F09";
+
+  }
   for (const bf2 of bf) {
     
     bf2.style.filter = "invert()";
@@ -109,6 +131,22 @@ function changeBackgroundAndHeaderstar() {
   p.style.color = "";
   textElement.style.color = "";
   c.style.filter = "";
+  for (const pg2 of pg){
+    pg2.style.backgroundColor = "";
+  }
+  for (const pd2 of pd){
+    pd2.style.backgroundColor = "";
+  }
+  for (const pgbis2 of pgbis){
+    pgbis2.style.backgroundColor = "";
+  }
+  for (const pdbis2 of pdbis){
+    pdbis2.style.backgroundColor = "";
+  }
+  for (const point2 of point){
+    point2.style.backgroundColor = "";
+
+  }
   for (const bf2 of bf) {
     
     bf2.style.filter = "";
@@ -229,8 +267,10 @@ bulle1()
 bulle2()
 bulle3()
 
-  
 
+
+  
+              
 
 
 
