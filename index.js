@@ -44,7 +44,7 @@ const header = document.querySelector("header");
 
   // function change (){
   //   const bulle = document.getElementsByClassName(change);
-  //   const back = ducument.
+  //   const back = document. // Changed from ducument to document
   //   document.addEventListener("click", (bulle) => {
   
   
@@ -60,6 +60,7 @@ const footer = document.querySelector('footer');
 const nf = document.querySelector('.nf');
 const p = document.querySelector('.p');
 const c = document.querySelector('.change');
+const cc = document.querySelectorAll('.cc');
 const changeButtonstar = document.querySelector('.star');
 const bf = document.querySelectorAll('.diamond1');
 const bf1 = document.querySelector('.diamond2');
@@ -74,6 +75,8 @@ const pd = document.querySelectorAll('.pentagone-droit');
 const pgbis = document.querySelectorAll('.pentagone-gauche-bis');
 const pdbis = document.querySelectorAll('.pentagone-droit-bis');
 const point = document.querySelectorAll('.point');
+const btncv = document.querySelectorAll('.btncv');
+const btncvp = document.querySelectorAll('.btncv p');
 
 
 
@@ -88,25 +91,37 @@ function changeBackgroundAndHeadernight() {
   header.style.color = "#fff"; 
   
   footer.style.backgroundImage = "linear-gradient(to top, rgb(75, 2, 75), rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0))";
-  nf.style.color = "#C30F09";
-  p.style.color = "#C30F09";
+  nf.style.color = "rgb(75, 2, 75)";
+  p.style.color = "rgb(75, 2, 75)";
   textElement.style.color = "#cda9cb";
-  c.style.filter = "invert()";
+  // c.style.filter = "invert()";
+  c.style.backgroundColor = "rgb(150, 6, 150)";
+  for (const cc2 of cc){
+    cc2.style.filter = "invert()";
+
+  }
   for (const pg2 of pg){
-    pg2.style.backgroundColor = "#C30F09";
+    pg2.style.backgroundColor = "rgb(150, 6, 150)";
   }
   for (const pd2 of pd){
-    pd2.style.backgroundColor = "#C30F09";
+    pd2.style.backgroundColor = "rgb(150, 6, 150)";
   }
   for (const pgbis2 of pgbis){
-    pgbis2.style.backgroundColor = "#C30F09";
+    pgbis2.style.backgroundColor = "rgb(150, 6, 150)";
   }
   for (const pdbis2 of pdbis){
-    pdbis2.style.backgroundColor = "#C30F09";
+    pdbis2.style.backgroundColor = "rgb(150, 6, 150)";
   }
   for (const point2 of point){
-    point2.style.backgroundColor = "#C30F09";
+    point2.style.backgroundColor = "rgb(150, 6, 150)";
 
+  }
+  for(const btncv2 of btncv){
+    btncv2.style.backgroundColor = "rgb(150, 6, 150)";
+    btncv2.style.opacity = "0.7"
+  }
+  for(const btncvp2 of btncvp){
+    btncvp2.style.color = "whitesmoke"
   }
   for (const bf2 of bf) {
     
@@ -131,6 +146,11 @@ function changeBackgroundAndHeaderstar() {
   p.style.color = "";
   textElement.style.color = "";
   c.style.filter = "";
+  c.style.backgroundColor = "";
+  for (const cc2 of cc){
+    cc2.style.filter = "";
+
+  }
   for (const pg2 of pg){
     pg2.style.backgroundColor = "";
   }
@@ -146,6 +166,12 @@ function changeBackgroundAndHeaderstar() {
   for (const point2 of point){
     point2.style.backgroundColor = "";
 
+  }
+  for(const btncv2 of btncv){
+    btncv2.style.backgroundColor = ""
+  }
+  for(const btncvp2 of btncvp){
+    btncvp2.style.color = ""
   }
   for (const bf2 of bf) {
     
@@ -166,14 +192,40 @@ function changeBackgroundAndHeadersunset() {
   video.src = "./imgbg/mylivewallpapers.com-Sunset-Ocean.mp4";
 
   
-  header.style.backgroundImage = "linear-gradient(to bottom, rgb(150, 6, 150), rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0))";
+  header.style.backgroundImage = "linear-gradient(to bottom,rgb(180, 140, 0), rgba(180, 140, 0, 0.7), rgba(180, 140, 0, 0))";
   header.style.color = "#fff"; 
   
-  footer.style.backgroundImage = "linear-gradient(to top, rgb(75, 2, 75), rgba(128, 0, 128, 0.5), rgba(128, 0, 128, 0))";
-  nf.style.color = "#C30F09";
-  p.style.color = "#C30F09";
-  textElement.style.color = "#cda9cb";
-  c.style.filter = "";
+  footer.style.backgroundImage = "linear-gradient(to top, rgb(180, 140, 0), rgba(180, 140, 0, 0.7), rgba(180, 140, 0, 0))";
+  nf.style.color = "rgba(180, 140, 0, 0.7)";
+  p.style.color = "rgba(180, 140, 0, 0.7)";
+  textElement.style.color = "rgba(243, 242, 239, 0.7)";
+  c.style.backgroundColor = "rgb(236, 195, 31)";
+  for (const cc2 of cc){
+    cc2.style.filter = "";
+
+  }
+  for (const pg2 of pg){
+    pg2.style.backgroundColor = "rgba(180, 140, 0, 0.7)";
+  }
+  for (const pd2 of pd){
+    pd2.style.backgroundColor = "rgba(180, 140, 0, 0.7)";
+  }
+  for (const pgbis2 of pgbis){
+    pgbis2.style.backgroundColor = "rgba(180, 140, 0, 0.7)";
+  }
+  for (const pdbis2 of pdbis){
+    pdbis2.style.backgroundColor = "rgba(180, 140, 0, 0.7)";
+  }
+  for (const point2 of point){
+    point2.style.backgroundColor = "rgba(180, 140, 0, 0.7)";
+
+  }
+  for(const btncv2 of btncv){
+    btncv2.style.backgroundColor = "rgba(180, 140, 0, 0.7)"
+  }
+  for(const btncvp2 of btncvp){
+    btncvp2.style.color = "whitesmoke"
+  }
   for (const bf2 of bf) {
     
     bf2.style.filter = "";
@@ -268,9 +320,13 @@ bulle2()
 bulle3()
 
 
+// document.getElementById('showPdf').addEventListener('click', () => {
+//   const pdfViewer = document.getElementById('pdfViewer');
+//   pdfViewer.src = 'document.pdf'; 
+//   pdfViewer.style.display = 'block';
+// });
 
-  
-              
+
 
 
 
